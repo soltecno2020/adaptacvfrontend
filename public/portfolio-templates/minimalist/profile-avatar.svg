@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title description">
+  <title id="title">Avatar ilustrado de Hugo Martínez</title>
+  <desc id="description">Caricatura de una persona sonriente frente a un fondo geométrico verde y azul.</desc>
+  <rect width="480" height="480" fill="#dce9ff"/>
+  <path d="M0 340 138 202l96 83 89-121L480 316v164H0Z" fill="#85f8c4"/>
+  <path d="m301 56 78 84-49 58-78-83Z" fill="#00855d" opacity=".9"/>
+  <circle cx="240" cy="205" r="104" fill="#253a52"/>
+  <path d="M148 196c0-76 43-119 96-119s96 43 96 119v18H148Z" fill="#16283d"/>
+  <ellipse cx="240" cy="216" rx="82" ry="94" fill="#e7aa7a"/>
+  <path d="M165 185c1-62 35-101 79-101 53 0 82 41 83 103-26-13-50-40-61-65-16 33-52 57-101 63Z" fill="#1c3048"/>
+  <path d="M183 220h34M263 220h34" stroke="#253a52" stroke-linecap="round" stroke-width="9"/>
+  <path d="M207 266c20 17 47 17 67 0" fill="none" stroke="#9e4e48" stroke-linecap="round" stroke-width="8"/>
+  <path d="M129 480v-72c0-58 50-98 111-98s111 40 111 98v72Z" fill="#006948"/>
+  <path d="m194 315 46 48 46-48 26 165H168Z" fill="#f8f9ff"/>
+  <circle cx="240" cy="382" r="9" fill="#00855d"/>
+  <circle cx="240" cy="421" r="9" fill="#00855d"/>
+</svg>

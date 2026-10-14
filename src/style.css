@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-stone-50: #f7f8fa;
+  --color-stone-100: #eef1f4;
+  --color-stone-200: #dce1e7;
+  --color-stone-300: #c5ccd5;
+  --color-stone-400: #8b96a5;
+  --color-stone-500: #667180;
+  --color-stone-600: #4b5665;
+  --color-stone-700: #35404f;
+  --color-stone-800: #222d3b;
+  --color-stone-900: #162130;
+  --color-stone-950: #0b1420;
+  --color-emerald-50: #edf8f6;
+  --color-emerald-100: #d7efeb;
+  --color-emerald-200: #addfd7;
+  --color-emerald-300: #78c8bd;
+  --color-emerald-400: #43aa9f;
+  --color-emerald-500: #238c82;
+  --color-emerald-600: #16756d;
+  --color-emerald-700: #145e59;
+  --color-emerald-800: #144b48;
+  --color-emerald-900: #123e3c;
+  --color-emerald-950: #082725;
+  --color-coral-50: #fff3ef;
+  --color-coral-500: #e66a4e;
+  --color-coral-600: #cb5138;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+:root {
+  color: #162130;
+  background: #f2f5f7;
+  font-family: Manrope, Avenir Next, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(180deg, #f8fafb 0%, #f2f5f7 46%, #eef2f5 100%);
+  background-attachment: fixed;
+}
+
+.bg-\[\#f7f3eb\] {
+  background-color: #f2f5f7;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.theme-dark {
+  color-scheme: dark;
+}
+
+.theme-dark body,
+.theme-dark .bg-\[\#f7f3eb\] {
+  background-color: #0b1420;
+  background-image: linear-gradient(180deg, #101c2a 0%, #0b1420 100%);
+}
+
+.theme-dark .bg-white,
+.theme-dark .bg-white\/90,
+.theme-dark .bg-stone-50,
+.theme-dark .bg-stone-50\/70 {
+  background-color: #162331;
+}
+
+.theme-dark .bg-stone-100,
+.theme-dark .hover\:bg-stone-100:hover {
+  background-color: #223140;
+}
+
+.theme-dark .bg-emerald-50,
+.theme-dark .hover\:bg-emerald-50\/50:hover {
+  background-color: #123b3a;
+}
+
+.theme-dark .wikimigration-page {
+  background-color: #0b1420;
+  background-image: linear-gradient(180deg, #101c2a 0%, #0b1420 100%);
+}
+
+.theme-dark .wikimigration-header {
+  background-color: rgb(22 35 49 / 0.95);
+}
+
+.theme-dark .wikimigration-subnav {
+  background-color: rgb(16 28 42 / 0.95);
+}
+
+.theme-dark .wikimigration-page .bg-white,
+.theme-dark .wikimigration-page .bg-white\/95 {
+  background-color: #162331;
+}
+
+.theme-dark .wikimigration-page .bg-stone-50 {
+  background-color: #1b2a39;
+}
+
+.theme-dark .wikimigration-page .bg-coral-50 {
+  background-color: #3a2628;
+}
+
+.theme-dark .wikimigration-page .text-emerald-800,
+.theme-dark .wikimigration-page .text-emerald-900 {
+  color: #78c8bd;
+}
+
+.theme-dark .wikimigration-page .hover\:text-emerald-900:hover,
+.theme-dark .wikimigration-page .hover\:text-emerald-950:hover {
+  color: #d7efeb;
+}
+
+.theme-dark .wikimigration-page .bg-emerald-100 {
+  background-color: #1c514d;
+}
+
+.theme-dark .workspace-nav .router-link-active {
+  color: #78c8bd;
+}
+
+.theme-dark .workspace-nav .workspace-nav-active-icon {
+  color: #78c8bd;
+}
+
+.workspace-nav .workspace-nav-item-active {
+  border-color: #addfd7;
+}
+
+.theme-dark .workspace-nav .workspace-nav-item-active {
+  border-color: #78c8bd;
+}
+
+.theme-dark .profile-page .text-emerald-800,
+.theme-dark .profile-page .text-emerald-900 {
+  color: #78c8bd;
+}
+
+.theme-dark .profile-page .hover\:text-emerald-900:hover,
+.theme-dark .profile-page .hover\:text-emerald-950:hover {
+  color: #d7efeb;
+}
+
+.theme-dark .profile-page .bg-emerald-50 {
+  background-color: #1c514d;
+}
+
+.theme-dark .workspace-page .text-emerald-800,
+.theme-dark .workspace-page .text-emerald-900 {
+  color: #78c8bd;
+}
+
+.theme-dark .workspace-page .hover\:text-emerald-900:hover,
+.theme-dark .workspace-page .hover\:text-emerald-950:hover {
+  color: #d7efeb;
+}
+
+.theme-dark .workspace-page .bg-emerald-50 {
+  background-color: #1c514d;
+}
+
+.theme-dark .home-hero-atmosphere {
+  background-image: linear-gradient(120deg, #12302f 0%, #101c2a 50%, #241b22 100%);
+}
+
+.theme-dark .home-hero-eyebrow {
+  color: #d7efeb;
+  background-color: #123b3a;
+  border-color: #16756d;
+}
+
+.theme-dark button.home-final-cta {
+  color: #0b1420;
+  background-color: #f7f8fa;
+}
+
+.theme-dark button.home-final-cta:hover {
+  color: #cb5138;
+  background-color: #fff3ef;
+}
+
+.home-footer-credit {
+  color: #144b48;
+}
+
+.home-footer-credit:hover {
+  color: #cb5138;
+}
+
+.theme-dark .home-footer-credit {
+  color: #78c8bd;
+}
+
+.theme-dark .home-footer-credit:hover {
+  color: #f29a83;
+}
+
+.theme-dark .text-stone-950,
+.theme-dark .text-stone-900,
+.theme-dark .text-stone-800,
+.theme-dark .text-stone-700 {
+  color: #f4f7f2;
+}
+
+.theme-dark .text-stone-600,
+.theme-dark .text-stone-500,
+.theme-dark .text-stone-400 {
+  color: #b7c1cc;
+}
+
+.theme-dark .text-emerald-950 {
+  color: #d6f2df;
+}
+
+.theme-dark .border-stone-300,
+.theme-dark .border-stone-200 {
+  border-color: #344556;
+}
+
+.theme-dark input,
+.theme-dark select,
+.theme-dark textarea {
+  background-color: #101c2a;
+  color: #f4f7f2;
+}
+
+.theme-dark .cv-paper {
+  background-color: #ffffff;
+  border-color: #d6d3d1;
+  color-scheme: light;
+}
+
+.theme-dark .cv-paper .text-stone-950,
+.theme-dark .cv-paper .text-stone-900 {
+  color: #0c0a09;
+}
+
+.theme-dark .cv-paper .text-stone-700 {
+  color: #44403c;
+}
+
+.theme-dark .cv-paper .text-stone-600,
+.theme-dark .cv-paper .text-stone-500 {
+  color: #57534e;
+}
+
+.theme-dark .cv-paper .text-emerald-800,
+.theme-dark .cv-paper .text-emerald-900 {
+  color: #065f46;
+}
+
+.theme-dark .cv-paper .border-stone-200,
+.theme-dark .cv-paper .border-stone-300 {
+  border-color: #e7e5e4;
+}
+
+.theme-dark .cv-paper .bg-stone-100 {
+  background-color: #f5f5f4;
+}
+
+.theme-dark .cv-paper .bg-emerald-50 {
+  background-color: #ecfdf5;
+}

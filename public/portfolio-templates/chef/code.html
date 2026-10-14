@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#141312","on-error-container":"#ffdad6","primary-fixed-dim":"#e9c349","tertiary-fixed-dim":"#e7c35a","outline":"#99907c","surface-container-low":"#1d1b1a","on-secondary":"#30312e","tertiary-container":"#d2af48","on-tertiary-fixed":"#241a00","on-secondary-fixed-variant":"#474744","secondary-fixed-dim":"#c8c6c3","inverse-on-surface":"#32302f","on-background":"#e6e1df","inverse-primary":"#735c00","inverse-surface":"#e6e1df","surface-variant":"#363433","secondary-fixed":"#e4e2de","tertiary":"#efcb60","surface":"#141312","on-tertiary-fixed-variant":"#584400","secondary":"#c8c6c3","surface-container-lowest":"#0f0e0d","on-secondary-fixed":"#1b1c1a","on-surface":"#e6e1df","surface-container":"#211f1e","on-primary-fixed-variant":"#574500","primary-container":"#d4af37","primary-fixed":"#ffe088","on-primary":"#3c2f00","on-primary-fixed":"#241a00","error":"#ffb4ab","surface-dim":"#141312","on-tertiary":"#3d2f00","primary":"#f2ca50","on-tertiary-container":"#554300","on-surface-variant":"#d0c5af","outline-variant":"#4d4635","surface-container-highest":"#363433","on-primary-container":"#554300","surface-tint":"#e9c349","on-secondary-container":"#b6b5b1","secondary-container":"#474744","tertiary-fixed":"#ffe08b","surface-container-high":"#2b2a28","surface-bright":"#3b3937","error-container":"#93000a","on-error":"#690005"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-md":"1rem","gutter-desktop":"3rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.75rem","space-3xl":"6.5rem","gutter-tablet":"2rem","max-width-content":"1280px","space-xs":"0.5rem","space-xxs":"0.25rem","space-2xl":"4rem","gutter-mobile":"1rem"},fontFamily:{"label-caps":["Manrope"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"body-md":["Manrope"],"body-sm":["Manrope"],"label-badge":["Manrope"],"headline-lg":["Playfair Display"],"body-lg":["Manrope"],"display-hero":["Playfair Display"],"title-menu":["Playfair Display"]},fontSize:{"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.14em","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"0em","fontWeight":"500"}],"headline-sm":["24px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.015em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"400"}],"label-badge":["10px",{"lineHeight":"14px","letterSpacing":"0.18em","fontWeight":"700"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0.01em","fontWeight":"300"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-menu":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><span aria-label="AdaptaCV" class="inline-flex h-8 items-center font-black tracking-normal text-primary">AdaptaCV</span><div class="flex flex-col"><span class="font-title-menu text-title-menu text-on-surface tracking-tight leading-none">Hugo Martínez</span><span class="font-label-caps text-label-caps text-primary uppercase mt-space-xxs">Haute Gastronomie</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary border-b border-primary pb-space-xxs"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="filosofia" href="#">Filosofía</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="trayectoria" href="#">Trayectoria</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="dossier-cv" href="#">Dossier &amp; CV</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="creaciones-de-autor" href="#">Creaciones de Autor</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="contacto-residencias" href="#">Contacto / Residencias</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-badge text-label-badge uppercase text-secondary tracking-widest">Disponible Residencias 2025</span></div><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-fixed hover:text-on-primary-fixed transition-all duration-300 shadow-[0_0_16px_rgba(212,175,55,0.2)]" data-path="solicitar-asesoria" href="#">Solicitar Asesoría</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="http://localhost:3000/portfolio-templates/chef/profile-avatar.svg"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- ==================== HERO SECTION ==================== -->
+<section class="relative w-full overflow-hidden px-gutter-desktop py-space-3xl flex flex-col items-center">
+<!-- Ambient Golden Glow behind Hero -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 right-10 w-80 h-80 bg-primary-container/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] w-full grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left Column: Copy & Manifesto -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Michelin & Paris Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-md">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary">3 Estrellas Michelin • Le Cordon Bleu París</span>
+</div>
+<!-- Headline & Designation -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+            Hugo Martínez
+          </h1>
+<span class="font-headline-sm text-headline-sm text-primary italic font-serif">
+            Chef Ejecutivo &amp; Alquimista Gastronómico
+          </span>
+</div>
+<!-- Bio & Availability -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Con una trayectoria de más de quince años liderando las mesas más exigentes de Europa y Asia, Hugo concibe el fogón como un diálogo milimétrico entre el terruño vivo, la técnica francesa ancestral y la sensibilidad contemporánea.
+        </p>
+<!-- Availability Status Bar -->
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded bg-surface-container-low">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">
+            Disponible para residencias culinarias, aperturas internacionales &amp; consultoría privada
+          </span>
+</div>
+<!-- Author Manifesto Quote -->
+<blockquote class="relative pl-space-lg my-space-xs bg-surface-container-low/60 rounded-r-xl p-space-md">
+<span class="absolute left-2 top-2 text-primary/40 font-headline-lg select-none leading-none">“</span>
+<p class="font-headline-sm text-headline-sm italic text-on-surface font-normal">
+            “La alta gastronomía no es el artificio del exceso, sino la devoción absoluta por desnudar el alma de cada elemento en su temperatura exacta.”
+          </p>
+<footer class="mt-space-xs font-label-caps text-label-caps uppercase text-primary tracking-widest">
+            — Hugo Martínez • Cuaderno de Cocina, París
+          </footer>
+</blockquote>
+<!-- Action CTAs -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<a class="px-space-lg py-space-sm rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-fixed hover:text-on-primary-fixed transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)] flex items-center gap-space-xs" href="#dossier">
+<span class="material-symbols-outlined text-lg">download</span>
+            Descargar Dossier 2025
+          </a>
+<a class="px-space-lg py-space-sm rounded bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider hover:bg-surface-container-high transition-all duration-300 flex items-center gap-space-xs" href="#creaciones">
+            Ver Creaciones de Autor
+            <span class="material-symbols-outlined text-lg">east</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Chef Visual Frame with Badge -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<!-- Subtle back glow -->
+<div class="absolute inset-0 bg-primary/10 rounded-2xl filter blur-2xl transform scale-95 pointer-events-none"></div>
+<div class="relative w-full max-w-[480px] aspect-square rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.85)] bg-surface-container-high group">
+<!-- Chef Image -->
+<img alt="Avatar culinario de Hugo Martínez" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out" src="http://localhost:3000/portfolio-templates/chef/profile-avatar.svg"/>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent pointer-events-none"></div>
+<!-- Experience Floating Badge -->
+<div class="absolute bottom-space-lg left-space-lg right-space-lg p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-md shadow-2xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none font-bold">15+ Años</span>
+<span class="font-label-caps text-label-caps text-primary uppercase mt-space-xxs">Maestría &amp; Excelencia Culinaria</span>
+</div>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge uppercase">Paris • Tokyo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Impact Metrics Bar -->
+<div class="max-w-[1280px] w-full mt-space-3xl pt-space-xl bg-surface-container-low/80 backdrop-blur-sm rounded-xl px-space-xl py-space-lg">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg">
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold tracking-tight">15+</span>
+<span class="font-title-menu text-title-menu text-on-surface mt-space-xxs">Años de Excelencia</span>
+<span class="font-body-sm text-body-sm text-outline">En ateliers de alta gastronomía europea y asiática</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<div class="flex items-baseline gap-space-xxs">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold tracking-tight">3</span>
+<span class="font-headline-sm text-headline-sm text-primary">★</span>
+</div>
+<span class="font-title-menu text-title-menu text-on-surface mt-space-xxs">Estrellas Michelin</span>
+<span class="font-body-sm text-body-sm text-outline">Lideradas y consolidadas como Chef Ejecutivo</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold tracking-tight">120k+</span>
+<span class="font-title-menu text-title-menu text-on-surface mt-space-xxs">Comensales de Gala</span>
+<span class="font-body-sm text-body-sm text-outline">Deleite sensorial a través de 4 continentes</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold tracking-tight">14</span>
+<span class="font-title-menu text-title-menu text-on-surface mt-space-xxs">Galardones Globales</span>
+<span class="font-body-sm text-body-sm text-outline">50 Best Discovery &amp; Prix d'Excellence Gastronomique</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== DOSSIER EJECUTIVO & DESCARGAS ==================== -->
+<section class="w-full px-gutter-desktop py-space-3xl bg-surface-container-lowest relative" id="dossier">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Documentación Confidencial &amp; Perfil</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Dossier Ejecutivo &amp; Descargas</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Material curricular, credenciales institucionales y catálogo artístico actualizado para juntas directivas de hoteles de lujo, mecenas y comités de inversión gastronómica.
+        </p>
+</div>
+<!-- 3 Download Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Curriculum Vitae -->
+<div class="bg-surface-container p-space-xl rounded-xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">description</span>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-primary font-label-badge text-label-badge uppercase">PDF • 4.2 MB</span>
+</div>
+<div>
+<h3 class="font-title-menu text-title-menu text-on-surface">Curriculum Vitae Ejecutivo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Desglose minucioso de 15 años de dirección en brigadas culinarias de 40+ miembros, balances operativos P&amp;L y gestión de estrellas en Francia y Japón.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<button class="w-full py-space-sm px-space-md rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors flex items-center justify-center gap-space-xs shadow-md" onclick="triggerDownload('Curriculum Vitae (PDF 2025)')">
+<span class="material-symbols-outlined text-base">download</span>
+              Descargar CV Completo
+            </button>
+</div>
+</div>
+<!-- Card 2: Cover Letter -->
+<div class="bg-surface-container p-space-xl rounded-xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-primary font-label-badge text-label-badge uppercase">PDF • 1.8 MB</span>
+</div>
+<div>
+<h3 class="font-title-menu text-title-menu text-on-surface">Carta de Presentación &amp; Visión</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Exposición estratégica de la visión culinaria de Hugo Martínez ante aperturas hoteleras de ultra lujo, residencias de temporada y conceptualizaciones signature.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<button class="w-full py-space-sm px-space-md rounded bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase tracking-wider hover:bg-surface-bright transition-colors flex items-center justify-center gap-space-xs shadow-md" onclick="triggerDownload('Carta de Presentación Ejecutiva (PDF 2025)')">
+<span class="material-symbols-outlined text-base">download</span>
+              Descargar Carta de Presentación
+            </button>
+</div>
+</div>
+<!-- Card 3: Portfolio Book -->
+<div class="bg-surface-container p-space-xl rounded-xl flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">auto_stories</span>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-primary font-label-badge text-label-badge uppercase">ZIP / PDF • 18 MB</span>
+</div>
+<div>
+<h3 class="font-title-menu text-title-menu text-on-surface">Book Culinario &amp; Monografía</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Compendio fotográfico en ultra alta resolución (300 DPI) con más de 60 platos de autor, notas de cata estacionales y esquemas de emplatado arquitectónico.
+              </p>
+</div>
+</div>
+<div class="pt-space-lg">
+<button class="w-full py-space-sm px-space-md rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors flex items-center justify-center gap-space-xs shadow-md" onclick="triggerDownload('Portfolio Book de Alta Resolución (ZIP / 18 MB)')">
+<span class="material-symbols-outlined text-base">file_download</span>
+              Descargar Book Culinario Completo
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== TRAYECTORIA & RESIDENCIAS INTERNACIONALES ==================== -->
+<section class="w-full px-gutter-desktop py-space-3xl relative">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-xxs text-center items-center">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Cronología de Reconocimientos &amp; Liderazgo</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Trayectoria &amp; Residencias Internacionales</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-space-xs">
+          Una carrera forjada en los epicentros gastronómicos mundiales, uniendo la disciplina técnica de la escuela parisina con el silencio contemplativo del Wabi-sabi nipón.
+        </p>
+</div>
+<!-- Sophisticated Timeline -->
+<div class="relative flex flex-col gap-space-xl mt-space-lg">
+<!-- Timeline Item 1 -->
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg group hover:bg-surface-container transition-colors">
+<div class="flex flex-col lg:flex-row items-start lg:items-center gap-space-lg">
+<div class="flex flex-col items-start min-w-[200px]">
+<span class="font-headline-sm text-headline-sm text-primary font-serif">2021 — Presente</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">París, Francia</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">L'Étoile Noire</h3>
+<span class="text-primary font-headline-sm">★★★</span>
+</div>
+<span class="font-title-menu text-title-menu text-primary italic font-serif mt-space-xxs">Chef Ejecutivo &amp; Director Creativo</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-2xl">
+                Retención ininterrumpida de las 3 Estrellas Michelin. Transformación del menú degustación hacia una despensa 100% bio-regenerativa de pequeños productores de Normandía y Bretaña. Dirección de una brigada de 45 profesionales.
+              </p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-col gap-space-xs shrink-0">
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-primary font-label-badge text-label-badge uppercase">3 Estrellas Michelin</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge uppercase">19.5/20 Gault &amp; Millau</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg group hover:bg-surface-container transition-colors">
+<div class="flex flex-col lg:flex-row items-start lg:items-center gap-space-lg">
+<div class="flex flex-col items-start min-w-[200px]">
+<span class="font-headline-sm text-headline-sm text-primary font-serif">2017 — 2021</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Tokio / Kyoto, Japón</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nacre &amp; Brasa</h3>
+<span class="text-primary font-headline-sm">★★</span>
+</div>
+<span class="font-title-menu text-title-menu text-primary italic font-serif mt-space-xxs">Head Chef &amp; Asesor de Apertura</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-2xl">
+                Diseño conceptual y ejecución desde la inauguración. Consecución histórica de 2 Estrellas Michelin en menos de 14 meses gracias a la fusión de técnicas de carbón Binchotan con fondos reducidos franceses.
+              </p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-col gap-space-xs shrink-0">
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-primary font-label-badge text-label-badge uppercase">2 Estrellas Michelin</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge uppercase">Apertura del Año • Asia 50</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg group hover:bg-surface-container transition-colors">
+<div class="flex flex-col lg:flex-row items-start lg:items-center gap-space-lg">
+<div class="flex flex-col items-start min-w-[200px]">
+<span class="font-headline-sm text-headline-sm text-primary font-serif">2014 — 2017</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">San Sebastián, España</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Terruño Ancestral</h3>
+<span class="text-primary font-headline-sm">★★★</span>
+</div>
+<span class="font-title-menu text-title-menu text-primary italic font-serif mt-space-xxs">Sous Chef Principal &amp; I+D Gastronómico</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-2xl">
+                Codirección del laboratorio experimental de fermentaciones cantábricas. Desarrollo de nuevos protocolos de maduración de pescados salvajes y texturización con algas liofilizadas.
+              </p>
+</div>
+</div>
+<div class="flex flex-wrap lg:flex-col gap-space-xs shrink-0">
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-primary font-label-badge text-label-badge uppercase">Vanguardia Vasca</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge uppercase">Líder Laboratorio I+D</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CREACIONES DE AUTOR & PROYECTOS GASTRONÓMICOS ==================== -->
+<section class="w-full px-gutter-desktop py-space-3xl bg-surface-container-lowest" id="creaciones">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Colección Culinaria de Temporada</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Creaciones de Autor &amp; Proyectos</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Cada plato constituye una escultura efímera respaldada por meses de rigor analítico en laboratorio, combinando texturas irrepetibles y maridajes enológicos sublimes.
+        </p>
+</div>
+<!-- 4 Author Creations Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<!-- Dish 1 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-xl flex flex-col group transition-all duration-300">
+<div class="relative w-full h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Fine dining haute gastronomy oyster dish by Hugo Martínez, Brittany oyster bathed in delicate sea spray mist, sea urchin emulsion foam, imperial black caviar pearls, served in an obsidian dark artisan ceramic plate, soft theatrical mood lighting, Michelin star presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiyAn7PltJwCl3ahfNaBTm-LpAORC1xnRkdu_BzI4w3J7t9YrmEWzTxx9VkwyPoWCUoh1FLgNGlGq7TpwywVBsnfWNZ1XY6vG7MnxYck_TF5sW6LcrbYLg2SU1QkS2EwtWL-b6ei3Gt6G-jblIMmjjIO4FFT8xlxQisDutuEYMmoNNL8oya1DiH7lqM-jzkXxeozNBYYCbHtgdldBu5El7X8nYNRwIkEZl2E-WmpxR8tWHuFPaFpUgBw"/>
+<div class="absolute top-space-md right-space-md px-space-sm py-space-xxs rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-badge text-label-badge uppercase">
+              Primer Pase • Degustación
+            </div>
+</div>
+<div class="p-space-xl flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sinfonía del Mar Boreal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Ostras salvajes de Bretaña suspendidas en niebla de agua marina ionizada, suave emulsión tibia de erizo de mar y perlas de caviar imperial siberiano.
+              </p>
+<div class="flex flex-wrap gap-space-xxs mt-space-xs">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Niebla de Agua Marina</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Erizo &amp; Caviar Imperial</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Maridaje Seleccionado</span>
+<span class="font-body-sm text-body-sm text-primary font-serif">Dom Pérignon P2 Vintage 2004</span>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary transition-all flex items-center gap-space-xxs shadow" onclick="openDishModal('sinfonia')">
+<span>Ver Ficha &amp; Maridaje</span>
+<span class="material-symbols-outlined text-base">read_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish 2 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-xl flex flex-col group transition-all duration-300">
+<div class="relative w-full h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Ultra luxury Wagyu A5 beef charred over oak embers with Himalayan pink salt crust, shaved fresh black truffle Melanosporum, dark glazed savory jus, modern minimalist plating on dark slate, moody warm candlelight, Michelin star gastronomy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-HFou308EFnEV_Rs32KwmAYnM_qdaS-cAIqq1I7z4ICDZr1tPlY79TmtzHynUNLUQLwjtgkikCmXbLVF9yCsGQhEhHGcMZbaSpY3HAPUZHeGhcGt8mBM4VZ7ouSzMI-W6UEE6GANZGMLkMul25yWEMzutkhA_Uiy6I_UYybpkV0Q80CamGuUwjD1qn8PcbontolQkUNULQ8pC9vxAd-IQovLArlcIEM0i6K-WmLD652sRcFjVucXqNw"/>
+<div class="absolute top-space-md right-space-md px-space-sm py-space-xxs rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-badge text-label-badge uppercase">
+              Pase Principal • Fuego
+            </div>
+</div>
+<div class="p-space-xl flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fuego &amp; Cenizas de Roble</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Lomo Wagyu A5 de Kagoshima madurado durante 90 días en cámara de sal rosada del Himalaya, sellado al carbón Binchotan y láminas de trufa negra melanosporum.
+              </p>
+<div class="flex flex-wrap gap-space-xxs mt-space-xs">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Maduración 90 Días</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Wagyu A5 • Trufa Negra</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Maridaje Seleccionado</span>
+<span class="font-body-sm text-body-sm text-primary font-serif">Château Margaux Grand Vin 2010</span>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary transition-all flex items-center gap-space-xxs shadow" onclick="openDishModal('wagyu')">
+<span>Ver Ficha &amp; Maridaje</span>
+<span class="material-symbols-outlined text-base">read_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish 3 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-xl flex flex-col group transition-all duration-300">
+<div class="relative w-full h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Exquisite avant-garde dessert, hand-blown amber isomalt chrysanthemum sphere, elderflower quenelle sorbet, golden organic royal bee pollen dust, micro edible flowers, dark reflective porcelain dish, ethereal culinary art lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd_qCrCRZEfXXcOvuiXWqtpWa8hsAv4qWPqplQFPE9rkeaW8_gmscDMq6gnNDLqNH6VtUt4WudIsC8yUwnfxz2st6aFL2YjJDZfMSSx1e9MPN4AHkuXvPbSzETrcaiOwdwuWzQ-aayIq6AKCG8f2ZCKv-UmlpfrHyB9VuY13Q__tPgprY_Y83zhxKQIMHsv9WbccD-azQ8Xiy1DXBAEe23gydbQb2qjEYr5JOQ34pKnONlik4jyNtoHw"/>
+<div class="absolute top-space-md right-space-md px-space-sm py-space-xxs rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-badge text-label-badge uppercase">
+              Cierre Dulce • Postre
+            </div>
+</div>
+<div class="p-space-xl flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">El Jardín Prohibido</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Crisantemo de isomalt soplado artesanalmente, relleno con quenelle de sorbete silvestre de flor de saúco, miel de acacia centenaria y lluvia de polen de abeja reina.
+              </p>
+<div class="flex flex-wrap gap-space-xxs mt-space-xs">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Isomalt Soplado a Mano</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Sorbete Saúco • Polen Reina</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Maridaje Seleccionado</span>
+<span class="font-body-sm text-body-sm text-primary font-serif">Château d'Yquem Sauternes 2009</span>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary transition-all flex items-center gap-space-xxs shadow" onclick="openDishModal('jardin')">
+<span>Ver Ficha &amp; Maridaje</span>
+<span class="material-symbols-outlined text-base">read_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish 4 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-xl flex flex-col group transition-all duration-300">
+<div class="relative w-full h-72 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Avant-garde circular zero-waste gastronomy experiment, fermented garum droplets, barley koji extracts, deep oceanic umami broth in an artisan textured stone bowl, culinary research laboratory aesthetics, ultra moody dark table photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYJEohY-6g67VqIxNAQ72jVIo41Q46-jCYRVLJQYRqmPA8hz1SToZNhJDjv3J7dKNKyhWVsJpAiJDxKs4z-DqAlDByy0zgApHLGEs808YiAlGNqAR-sufjEbsxg8vzdyJBxjfMloX8fzwilwFPCzQzyRiuPZhP262vFfkU2n0abxfig8q4OXmR9ETvgRCROlFFCxCCDsfFujI_YpCEk0Pid7ZSNgYzkQgiorT_g-VLRpR6QRi8_txjgA"/>
+<div class="absolute top-space-md right-space-md px-space-sm py-space-xxs rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-badge text-label-badge uppercase">
+              I+D • Proyecto Circular
+            </div>
+</div>
+<div class="p-space-xl flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Terra Nostra: Zero-Waste Lab</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Investigación circular de garums milenarios elaborados con descartes de pescados nobles, inoculación con koji de cebada perlada y fermentación controlada a 60°C.
+              </p>
+<div class="flex flex-wrap gap-space-xxs mt-space-xs">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Bio-fermentación Koji</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-secondary font-label-caps text-label-caps">Garums Ancestrales</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Maridaje Seleccionado</span>
+<span class="font-body-sm text-body-sm text-primary font-serif">Sake Junmai Daiginjo Juyondai</span>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary transition-all flex items-center gap-space-xxs shadow" onclick="openDishModal('terranostra')">
+<span>Ver Ficha &amp; Maridaje</span>
+<span class="material-symbols-outlined text-base">read_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FOOTER / CIERRE DE CONTACTO ==================== -->
+<section class="w-full px-gutter-desktop py-space-3xl relative overflow-hidden bg-surface-container-low">
+<!-- Atmospheric Gold Ring glow -->
+<div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Contact Info & Atelier -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Atelier Gastronómico &amp; Consultoría</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Diseñemos una Experiencia Trascendente
+          </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+          Hugo Martínez atiende invitaciones para residencias culinarias globales, asesoramiento integral en conceptualización de restaurantes de alta gama y banquetes privados de protocolo diplomático.
+        </p>
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Secretaría Privada</span>
+<span class="font-title-menu text-title-menu text-on-surface">hmartinez@soltecno.cl</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Sede Central</span>
+<span class="font-title-menu text-title-menu text-on-surface">Place Vendôme, París • Ginza, Tokio</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Representación Exclusiva</span>
+<span class="font-title-menu text-title-menu text-on-surface">Agence Haute Gastronomie Paris • London</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Private Dining Inquiries Form -->
+<div class="lg:col-span-6 bg-surface-container p-space-2xl rounded-2xl shadow-2xl flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Solicitud de Residencia o Asesoría</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Por favor, complete el formulario para evaluar la compatibilidad de calendarios y confidencialidad del proyecto.
+          </p>
+<form class="flex flex-col gap-space-md mt-space-sm" id="contact-form" onsubmit="handleContactSubmit(event)">
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-caps text-label-caps text-primary uppercase">Nombre y Entidad Solicitante</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Ej. Hotel Villa Magnifique / Familia Real" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-caps text-label-caps text-primary uppercase">Correo Electrónico</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="hmartinez@soltecno.cl" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-caps text-label-caps text-primary uppercase">Tipo de Colaboración</label>
+<select class="w-full bg-surface-container-low px-space-md py-space-sm rounded text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary">
+<option value="residencia">Residencia Culinaria (1-3 meses)</option>
+<option value="asesoria">Apertura &amp; Consultoría I+D</option>
+<option value="gala">Cena Privada de Gala Exclusiva</option>
+<option value="conferencia">Keynote &amp; Masterclass VIP</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-caps text-label-caps text-primary uppercase">Fechas Estimadas &amp; Ciudad / País</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Ej. Noviembre 2025 • Dubái / Nueva York" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-caps text-label-caps text-primary uppercase">Detalles del Proyecto Gastronómico</label>
+<textarea class="w-full bg-surface-container-low px-space-md py-space-sm rounded text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary resize-none" placeholder="Describa el alcance, aforo estimado y requerimientos especiales..." rows="3"></textarea>
+</div>
+<button class="w-full mt-space-xs py-space-md px-space-lg rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-fixed hover:text-on-primary-fixed transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)] flex items-center justify-center gap-space-xs" type="submit">
+<span>Enviar Petición Confidencial</span>
+<span class="material-symbols-outlined text-lg">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== MODAL DE FICHA TÉCNICA Y MARIDAJE ==================== -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-gutter-mobile md:p-gutter-desktop backdrop-blur-xl bg-background/80 transition-opacity duration-300" id="dish-modal">
+<!-- Click backdrop to close -->
+<div class="absolute inset-0" onclick="closeDishModal()"></div>
+<!-- Modal Content Card -->
+<div class="relative w-full max-w-3xl bg-surface-container-highest rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.9)] overflow-hidden z-10 flex flex-col">
+<!-- Modal Top Bar -->
+<div class="p-space-lg bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">restaurant_menu</span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider" id="modal-category">Ficha Técnica • Pase de Autor</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" onclick="closeDishModal()">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-xl flex flex-col gap-space-lg max-h-[80vh] overflow-y-auto">
+<div class="flex flex-col gap-space-xxs">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-serif" id="modal-title">Título del Plato</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic" id="modal-desc">Descripción detallada</p>
+</div>
+<!-- Technical Specs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md p-space-md bg-surface-container rounded-xl">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-caps text-label-caps text-outline uppercase">Técnicas de Vanguardia</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="modal-tech">Vacío a baja temperatura, esferificación inversa.</span>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<span class="font-label-caps text-label-caps text-outline uppercase">Origen de Ingredientes</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="modal-origin">Pescadores artesanales de Cancale y agricultores de Île-de-France.</span>
+</div>
+</div>
+<!-- Sommelier Pairing Card -->
+<div class="p-space-lg bg-primary/10 rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-xl">wine_bar</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Maridaje Enológico Recomendado</span>
+</div>
+<h4 class="font-title-menu text-title-menu text-on-surface" id="modal-pairing-title">Nombre del Vino</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-pairing-notes">Notas del sumiller sobre el diálogo entre la acidez, taninos y las grasas del plato.</p>
+</div>
+<!-- Culinary Critic Quote -->
+<div class="p-space-md bg-surface-container-low rounded-xl">
+<p class="font-body-md text-body-md italic text-secondary" id="modal-critic">
+            “Una ejecución que roza la perfección geométrica y la poesía sensorial más audaz de la década.”
+          </p>
+<span class="font-label-badge text-label-badge uppercase text-primary tracking-widest mt-space-xs block" id="modal-critic-source">
+            — Le Figaro Gastronomique
+          </span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container-high flex justify-end">
+<button class="px-space-lg py-space-xs rounded bg-surface-container text-on-surface font-label-caps text-label-caps uppercase hover:bg-surface-bright transition-colors" onclick="closeDishModal()">
+          Cerrar Ficha
+        </button>
+</div>
+</div>
+</div>
+<!-- ==================== TOAST NOTIFICATION FOR DOWNLOADS ==================== -->
+<div class="fixed bottom-space-xl right-space-xl z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="px-space-lg py-space-md rounded-xl bg-surface-container-lowest/95 backdrop-blur-xl shadow-2xl flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary uppercase">Descarga Iniciada</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium" id="toast-message">Documento generado exitosamente.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== INTERACTIVE JAVASCRIPT ==================== -->
+<script>
+  // Data for Dishes
+  const dishData = {
+    sinfonia: {
+      category: "Primer Pase &bull; Degustación Boreal",
+      title: "Sinfonía del Mar Boreal",
+      desc: "Ostras salvajes de Bretaña suspendidas en niebla de agua marina ionizada, suave emulsión tibia de erizo de mar y perlas de caviar imperial siberiano.",
+      tech: "Criodesecación de fitoplancton, niebla marina por ultrasonido frío, emulsión aireada a 42°C.",
+      origin: "Costas de Cancale (Bretaña), erizos de roca de Galicia y caviar madurado 6 meses en bodega estéril.",
+      wine: "Dom Pérignon P2 Vintage 2004",
+      notes: "El carbónico ultra integrado y las notas de brioche tostado de este champán de segunda plenitud abrazan la salinidad explosiva del erizo y la untuosidad mineral del caviar.",
+      critic: "Martínez demuestra que el mar puede ser a la vez tempestad y susurro. Un prodigio técnico sin parangón.",
+      criticSource: "Guía Michelin France &bull; Informe de Inspectores"
+    },
+    wagyu: {
+      category: "Pase Principal &bull; Fuego Ancestral",
+      title: "Fuego & Cenizas de Roble",
+      desc: "Lomo Wagyu A5 de Kagoshima madurado durante 90 días en cámara de sal rosada del Himalaya, sellado al carbón Binchotan y trufa negra melanosporum.",
+      tech: "Dry-aging a 1.5°C con humedad relativa 75%, sellado a fuego directo de 900°C con madera de roble blanco japonés.",
+      origin: "Prefectura de Kagoshima (Japón), trufa fresca recolectada en Teruel y sal mineral pura de Khewra.",
+      wine: "Château Margaux Grand Vin 2010 (Premier Grand Cru Classé)",
+      notes: "Estructura aristocrática con notas de grosella negra, cedro y grafito, cuyos taninos sedosos disuelven la grasa intramuscular de la carne en una reverberación eterna.",
+      critic: "El control milimétrico del punto y el ahumado elevan este corte al pináculo de la carne de autor.",
+      criticSource: "L'Obs Gastronomie &bull; París"
+    },
+    jardin: {
+      category: "Cierre Dulce &bull; Botánica Efímera",
+      title: "El Jardín Prohibido",
+      desc: "Crisantemo de isomalt soplado artesanalmente, sorbete de flor de saúco, miel de acacia centenaria y lluvia de polen de abeja reina.",
+      tech: "Técnica de soplado de vidrio veneciano aplicada a azúcares a 160°C, pacojet a -22°C para emulsión micro-celular.",
+      origin: "Flores de saúco de los valles alsacianos, polen orgánico de colmenas de montaña en Haute-Savoie.",
+      wine: "Château d'Yquem Sauternes 2009",
+      notes: "La opulencia botrytis con aromas de albaricoque seco, cera de abejas y azafrán complementa la ligereza translúcida del isomalt sin saturar el paladar.",
+      critic: "Un artefacto de pura belleza plástica que se quiebra en boca revelando un verano alpino intacto.",
+      criticSource: "The World's 50 Best Restaurants Academy"
+    },
+    terranostra: {
+      category: "I+D &bull; Proyecto Circular Zero-Waste",
+      title: "Terra Nostra: Zero-Waste Lab",
+      desc: "Investigación circular de garums milenarios elaborados con descartes de pescados nobles, inoculación con koji de cebada perlada y fermentación controlada.",
+      tech: "Biorreactor térmico continuo a 60°C durante 60 días, centrifugado de alta velocidad para extracción límpida de aminoácidos libres.",
+      origin: "Descartes de merluza de pincho y atún rojo de almadraba gaditana, cebada ecológica de Castilla.",
+      wine: "Sake Junmai Daiginjo Juyondai 'Black Label'",
+      notes: "El umami concentrado del garum encuentra un reflejo armonioso en las notas de pera madura, melón y la textura aterciopelada de este mítico sake de Yamagata.",
+      critic: "El futuro de la alta cocina reside en esta conjunción de sostenibilidad radical y alquimia ancestral.",
+      criticSource: "Journal de la Gastronomie Durable"
+    }
+  };
+
+  // Dish Modal Open/Close Logic
+  function openDishModal(dishKey) {
+    const dish = dishData[dishKey];
+    if (!dish) return;
+
+    document.getElementById('modal-category').innerHTML = dish.category;
+    document.getElementById('modal-title').textContent = dish.title;
+    document.getElementById('modal-desc').textContent = dish.desc;
+    document.getElementById('modal-tech').textContent = dish.tech;
+    document.getElementById('modal-origin').textContent = dish.origin;
+    document.getElementById('modal-pairing-title').textContent = dish.wine;
+    document.getElementById('modal-pairing-notes').textContent = dish.notes;
+    document.getElementById('modal-critic').innerHTML = '&ldquo;' + dish.critic + '&rdquo;';
+    document.getElementById('modal-critic-source').innerHTML = '&mdash; ' + dish.criticSource;
+
+    const modal = document.getElementById('dish-modal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDishModal() {
+    const modal = document.getElementById('dish-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // Toast Notification Logic for Downloads
+  function triggerDownload(docName) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.textContent = 'Descargando ' + docName;
+
+    toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+    }, 3800);
+  }
+
+  // Contact Form Submission Handler
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.textContent = 'Solicitud confidencial enviada al atelier de Hugo Martínez.';
+
+    toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    e.target.reset();
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+    }, 4500);
+  }
+
+  // Escape key closes modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDishModal();
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-3xl"><div class="max-w-[1280px] mx-auto px-gutter-desktop py-space-2xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start"><span class="font-headline-sm text-headline-sm text-on-surface">Hugo Martínez</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-space-xxs">Haute Cuisine Privée &amp; Consulting Gastronomique</span></div><div class="flex items-center gap-space-lg"><a class="font-label-caps text-label-caps uppercase text-secondary hover:text-primary transition-colors" data-path="filosofia" href="#">Filosofía</a><a class="font-label-caps text-label-caps uppercase text-secondary hover:text-primary transition-colors" data-path="creaciones-de-autor" href="#">Colección</a><a class="font-label-caps text-label-caps uppercase text-secondary hover:text-primary transition-colors" data-path="contacto-residencias" href="#">Contacto</a></div><div class="text-right"><span class="font-body-sm text-body-sm text-outline">© 2025 Hugo Martínez. Tous droits réservés.</span></div></div></footer></body></html>

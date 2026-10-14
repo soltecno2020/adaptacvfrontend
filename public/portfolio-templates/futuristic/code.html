@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#fff5f6","on-primary-fixed":"#002022","on-tertiary-container":"#be0059","surface-dim":"#101320","surface-bright":"#363848","inverse-surface":"#e0e1f5","on-surface-variant":"#b9cacb","tertiary-container":"#ffcfd8","outline":"#849495","on-surface":"#e0e1f5","surface-container-high":"#272938","primary":"#e0fdff","inverse-primary":"#00696f","on-secondary-container":"#d2a0ff","tertiary-fixed":"#ffd9e0","surface-container-highest":"#323443","surface":"#101320","error-container":"#93000a","inverse-on-surface":"#2d303e","secondary-fixed":"#f0dbff","on-secondary-fixed":"#2c0050","on-primary":"#00373a","tertiary-fixed-dim":"#ffb1c3","surface-container":"#1c1f2d","on-secondary":"#4a007f","primary-container":"#00f2fe","on-tertiary-fixed":"#3f0019","surface-container-lowest":"#0b0d1b","secondary-container":"#670fac","surface-container-low":"#181b29","primary-fixed-dim":"#00dce6","on-tertiary":"#66002c","on-error-container":"#ffdad6","on-secondary-fixed-variant":"#670fac","background":"#101320","error":"#ffb4ab","on-error":"#690005","surface-variant":"#323443","surface-tint":"#00dce6","secondary":"#deb7ff","on-primary-container":"#006a70","on-tertiary-fixed-variant":"#8f0041","primary-fixed":"#6ff6ff","outline-variant":"#3a494b","on-background":"#e0e1f5","secondary-fixed-dim":"#deb7ff","on-primary-fixed-variant":"#004f53"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter-mobile":"1rem","gutter-desktop":"1.5rem","space-xxs":"0.25rem","space-sm":"0.75rem","space-3xl":"4rem","margin-desktop":"2.5rem","space-md":"1rem","margin-mobile":"1.25rem","space-xs":"0.5rem","space-2xl":"3rem","space-lg":"1.5rem"},fontFamily:{"label-code-lg":["Space Mono"],"headline-sm":["Space Grotesk"],"display-hero":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-sm":["Outfit"],"headline-lg-mobile":["Space Grotesk"],"headline-lg":["Space Grotesk"],"display-hero-mobile":["Space Grotesk"],"body-lg":["Outfit"],"body-md":["Outfit"],"label-code-sm":["Space Mono"]},fontSize:{"label-code-lg":["13px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"500"}],"display-hero":["48px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"600"}],"display-hero-mobile":["34px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["17px",{lineHeight:"26px",letterSpacing:"0.01em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"label-code-sm":["11px",{lineHeight:"14px",letterSpacing:"0.1em",fontWeight:"400"}]}}}}</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen relative overflow-x-hidden"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-40 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div><div class="absolute top-1/3 -right-20 w-80 h-80 bg-secondary-container/15 rounded-full blur-3xl"></div><div class="absolute -bottom-20 left-1/3 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div></div><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span aria-label="AdaptaCV" class="inline-flex h-8 items-center font-black tracking-normal text-primary">AdaptaCV</span><span class="font-label-code-lg text-label-code-lg uppercase tracking-wider text-on-surface flex items-center gap-space-xs"><span class="text-primary-container">Hugo Martínez</span><span class="text-outline">//</span><span class="text-on-surface-variant font-label-code-sm text-label-code-sm">Dev.Studio</span></span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-medium shadow-[inset_0_-2px_0_0_#00f2fe]"><a aria-current="page" class="transition-colors py-space-xs text-primary font-medium shadow-[inset_0_-2px_0_0_#00f2fe]" data-path="portfolio" href="#">Inicio</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="portfolio-proyectos" href="#">Proyectos</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="portfolio-descargas" href="#">Descargas</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="portfolio-stack" href="#">Stack</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="portfolio-contacto" href="#">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm hover:bg-primary hover:text-on-primary shadow-[0_0_20px_rgba(0,242,254,0.35)] transition-all" data-path="portfolio-descargas" href="#"><span class="material-symbols-outlined text-[18px]">download</span><span>Descargar CV</span></a><img alt="Avatar de Hugo Martínez" class="h-8 w-8 shrink-0 rounded-full border border-primary-container object-cover" src="http://localhost:3000/portfolio-templates/futuristic/profile-avatar.svg"/></div></div></header><main class="relative z-10 w-full pt-20 bg-transparent"><div class="flex flex-col w-full text-on-surface">
+<!-- ==================== HERO SECTION ==================== -->
+<section class="relative w-full overflow-hidden pb-space-3xl lg:pb-36 pt-space-xl lg:pt-28" id="inicio">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+<!-- Status Pill Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xxs rounded-full bg-surface-container-high/60 backdrop-blur-md shadow-[0_0_24px_rgba(0,242,254,0.15)] mb-space-xl">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container shadow-[0_0_8px_#00f2fe]"></span>
+</span>
+<span class="font-label-code-sm text-label-code-sm text-primary tracking-wider uppercase">
+          DISPONIBLE PARA NUEVOS PROYECTOS <span class="text-outline-variant mx-1">//</span> FULL-STACK &amp; CREATIVE CODE
+        </span>
+</div>
+<!-- Main Hero Editorial Heading -->
+<div class="grid grid-cols-1 items-center gap-space-xl lg:grid-cols-[minmax(0,1fr)_280px]">
+<div class="max-w-5xl">
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface font-bold tracking-tight">
+          Hugo Martínez · Desarrollador de Software
+          <span class="block mt-space-xxs bg-gradient-to-r from-primary-container via-primary-fixed-dim to-secondary bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(0,242,254,0.25)]">
+            e Interfaces de Alto Rendimiento.
+          </span>
+</h1>
+<p class="mt-space-lg text-on-surface-variant font-body-lg text-body-lg max-w-2xl leading-relaxed">
+          Diseño y construyo experiencias web interactivas, sistemas reactivos de baja latencia y productos digitales con atención obsesiva al detalle, arquitectura escalable y rendimiento gráfico en 60 FPS.
+        </p>
+</div>
+<div class="relative mx-auto w-full max-w-[280px] overflow-hidden rounded-2xl border border-primary-container/50 bg-surface-container shadow-[0_0_36px_rgba(0,242,254,0.2)] lg:mx-0">
+<img alt="Avatar futurista de Hugo Martínez" class="aspect-[7/8] w-full object-cover" src="http://localhost:3000/portfolio-templates/futuristic/profile-avatar.svg"/>
+<div class="absolute inset-x-0 bottom-0 flex items-center justify-between border-t border-primary-container/30 bg-surface-container-lowest/85 px-3 py-2 backdrop-blur-md"><span class="font-label-code-sm text-label-code-sm text-primary-container">HUGO MARTÍNEZ</span><span class="font-label-code-sm text-label-code-sm text-secondary">ONLINE</span></div>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="mt-space-2xl flex flex-wrap items-center gap-space-md">
+<!-- Primary Button: Descargar CV -->
+<a class="inline-flex items-center gap-space-xs px-space-xl py-3.5 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-semibold shadow-[0_0_30px_rgba(0,242,254,0.4)] hover:shadow-[0_0_40px_rgba(0,242,254,0.7)] hover:bg-primary hover:text-on-primary transition-all duration-300" href="#descargas">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Descargar CV (PDF)</span>
+</a>
+<!-- Secondary Button: Cover Letter -->
+<button class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded-full bg-surface-container-high/70 backdrop-blur-md text-on-surface hover:text-primary-container hover:bg-surface-container-highest transition-all duration-300 shadow-md" onclick="openCvPreviewModal('letter')">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">description</span>
+<span class="font-body-md text-body-md font-medium">Cover Letter (PDF)</span>
+</button>
+<!-- Tertiary Link with smooth scroll -->
+<a class="group inline-flex items-center gap-space-xs font-label-code-lg text-label-code-lg text-on-surface-variant hover:text-primary-container transition-colors pl-space-xs" href="#proyectos">
+<span>Explorar Proyectos</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-y-1 transition-transform">arrow_downward</span>
+</a>
+</div>
+<!-- Minimalist Metric Strip -->
+<div class="mt-space-3xl pt-space-xl border-t border-surface-container-highest/40 grid grid-cols-2 md:grid-cols-4 gap-space-lg">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">05+</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-widest mt-space-xxs">Años Exp. Técnica</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold tracking-tight">32+</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-widest mt-space-xxs">Proyectos Lanzados</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">99.9%</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-widest mt-space-xxs">Uptime &amp; Rendimiento</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold tracking-tight">&lt; 40ms</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-widest mt-space-xxs">Latencia Render WebGL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+<section class="relative w-full py-space-3xl scroll-mt-20" id="proyectos">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-2xl">
+<div>
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-primary-container uppercase tracking-widest mb-space-xs">
+<span>01 // SELECCIÓN DE OBRAS</span>
+<span class="w-8 h-[1px] bg-primary-container/40"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Proyectos Destacados</h2>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container-low/80 p-1.5 rounded-full backdrop-blur-md">
+<button class="filter-btn px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm uppercase tracking-wider bg-primary-container text-on-primary-container shadow-[0_0_12px_rgba(0,242,254,0.3)] transition-all" data-filter="all">Todos</button>
+<button class="filter-btn px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-filter="web">Web &amp; Apps</button>
+<button class="filter-btn px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-filter="webgl">WebGL &amp; Gráficos</button>
+<button class="filter-btn px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-all" data-filter="ai">Sistemas &amp; IA</button>
+</div>
+</div>
+<!-- Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl" id="projects-grid">
+<!-- CARD 1: NeuroFlow (AI & Web) -->
+<div class="project-card group relative rounded-2xl bg-surface-container/60 backdrop-blur-xl p-space-lg transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,242,254,0.18)] cursor-pointer flex flex-col justify-between" data-category="ai" onclick="openProjectModal('neuroflow')">
+<div>
+<!-- Media Viewport -->
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container-highest/60 mb-space-md">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic glowing artificial intelligence dashboard interface on dark slate background, glowing neon cyan vector graphs and neural synapse nodes, ultra-clean modern digital workspace with high resolution glass UI components." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCr4Lu0tMBxKJgvFB43BoRtR3oRnj50vzbFbkthOId5suex_bdM81GjrPr9d_SOFeSWYGi2OskSQjGaUQkE_9gCeoa9ZPvlhyuI13LsYznVNL39yssCJk8PEncRmJV3mraeiXzLSUyYlEShTxT816p4Vg6TIY1Ts33D4NCMcXZC7nfIal6G3lVHK1d6vbMHMmlg-Xc7JqfsdEEXAwGEzt7C31YbGh9G9vlCN1sMOK5m8kjzLAIWQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<!-- Floating HUD Status -->
+<div class="absolute top-3 left-3 flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_6px_#00f2fe]"></span>
+<span class="font-label-code-sm text-label-code-sm text-primary">v2.4 Live Telemetry</span>
+</div>
+<!-- Quick Play Overlay Button -->
+<div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_15px_rgba(0,242,254,0.6)]">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</div>
+</div>
+<!-- Meta Title & Tags -->
+<div class="flex items-center justify-between gap-space-xs mb-space-xxs">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-widest">Sistemas &amp; IA // Workflow</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">2024</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary-container transition-colors">
+              NeuroFlow — Asistente Cognitivo IA
+            </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md line-clamp-2">
+              Editor visual de flujos de trabajo agénticos con telemetría en vivo, evaluación de modelos LLM y paralelización de tareas asíncronas.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container-highest/50 flex items-center justify-between">
+<div class="flex flex-wrap gap-space-xxs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">Next.js 14</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">TypeScript</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">OpenAI API</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary-container font-label-code-sm text-label-code-sm font-semibold group-hover:translate-x-1 transition-transform">
+<span>Detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Aetheria (WebGL & Graphics) -->
+<div class="project-card group relative rounded-2xl bg-surface-container/60 backdrop-blur-xl p-space-lg transition-all duration-500 hover:shadow-[0_12px_40px_rgba(222,183,255,0.18)] cursor-pointer flex flex-col justify-between" data-category="webgl" onclick="openProjectModal('aetheria')">
+<div>
+<!-- Media Viewport -->
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container-highest/60 mb-space-md">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract 3D iridescent fluid simulation flowing through space with neon violet purple and cyan particles, volumetric lighting, hyper-realistic glass refraction and chromatic dispersion, 8k render." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXGZ1jXD_xx3eaJ0qjs5LCscvS_V3KNqL7GHCOj30zChdkFPUUIbwW_fzT8nDddSlqkYaF10iK68hrmSDIqXOiMfofsNWLfuicC1VbptpohVcLNMd6XLoDBSXmyFOxMIMn8XpNt7hB_YEvNnl3yLF5YlaaCs3kSv_JH6UQ9SaGGiLAxRtnUtqm2vV8l4xe-ONeGdzWETwDOzzBEzz5JFg2LInVsQ2srst3uU6RmJ5lsmIL9BAFgA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_#deb7ff]"></span>
+<span class="font-label-code-sm text-label-code-sm text-secondary">60 FPS WebGPU</span>
+</div>
+<div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_15px_rgba(222,183,255,0.6)]">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</div>
+</div>
+<!-- Meta Title & Tags -->
+<div class="flex items-center justify-between gap-space-xs mb-space-xxs">
+<span class="font-label-code-sm text-label-code-sm text-secondary uppercase tracking-widest">WebGL &amp; Gráficos // Motor 3D</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">2024</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+              Aetheria — Motor WebGL 3D
+            </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md line-clamp-2">
+              Simulador de fluidos y partículas en tiempo real para navegadores web mediante shaders GLSL personalizados y pipeline moderno de WebGPU.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container-highest/50 flex items-center justify-between">
+<div class="flex flex-wrap gap-space-xxs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">Three.js</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">GLSL Shaders</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">WebGPU</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-code-sm text-label-code-sm font-semibold group-hover:translate-x-1 transition-transform">
+<span>Detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Chronos (Web OS & Web) -->
+<div class="project-card group relative rounded-2xl bg-surface-container/60 backdrop-blur-xl p-space-lg transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,242,254,0.18)] cursor-pointer flex flex-col justify-between" data-category="web" onclick="openProjectModal('chronos')">
+<div>
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container-highest/60 mb-space-md">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic cyber minimalist desktop user interface with multi-window tiling layout, translucent dark glass cards, glowing cyan charts and terminal command line in an elegant deep cosmic dark mode workspace." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBigZVHQ-u92YZm8UiyVVJKOTUDxjOGuMovOAobh-f_dY9rIPGgFXNK7H6G08vYD3p_rFioamRDVwsvW0jSRBqp2eI_U6ZfyEhLhVtR6f_bVFR76z3AzBHcnJjC4pifuzXWwUEiXm98oSOXg0yXHBj6mrz3g01-SxtSZ5lOwfaA3G0Ryf4CQEpN9F11tZE2iIJf-9QkgsTLp5kVUC_wtEXqPKXSajT5EgCjNkmoit7hoSbjVZ_Urg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_6px_#00f2fe]"></span>
+<span class="font-label-code-sm text-label-code-sm text-primary">Zero-Lag Rust WASM</span>
+</div>
+<div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_15px_rgba(0,242,254,0.6)]">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xxs">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-widest">Web &amp; Apps // Arquitectura</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary-container transition-colors">
+              Chronos — Web OS Modular
+            </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md line-clamp-2">
+              Sistema operativo en el navegador con gestión de ventanas multicapa, computación en Rust compilado a WASM y persistencia encriptada con IndexedDB.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container-highest/50 flex items-center justify-between">
+<div class="flex flex-wrap gap-space-xxs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">React 18</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">Rust WASM</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">Tailwind</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary-container font-label-code-sm text-label-code-sm font-semibold group-hover:translate-x-1 transition-transform">
+<span>Detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: PulseMetrics (Systems & AI) -->
+<div class="project-card group relative rounded-2xl bg-surface-container/60 backdrop-blur-xl p-space-lg transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,242,254,0.18)] cursor-pointer flex flex-col justify-between" data-category="ai" onclick="openProjectModal('pulse')">
+<div>
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container-highest/60 mb-space-md">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="High-density network telemetry operations center dashboard with high speed streaming line charts, real-time node cluster activity in glowing cyan and indigo shades, sleek dark cyber glass aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBp0NNN-H6qzHzXUZvkX6mW4LgDtEMRqD64Octk6VLQ3n08yXsz-0EekwOsCD26e1xQbK-M-UAhKmp-D9EOV74cao-kU6J5OUNnNwTBNzZcbHQpbUU-QfZuMmFCj5A1gFtw4erq6E4UXNEAJ7zpKUCQ_F2ptJ6LNBwH4TKtfhS5h8deyavKTF5GsJcFE7EuYIOUZYF1QZx5DsMNNccRy5DpcUm_tNuqXwWsrJ2nzlQbbVmi1-IyTQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_6px_#00f2fe]"></span>
+<span class="font-label-code-sm text-label-code-sm text-primary">1.2M Eventos/seg</span>
+</div>
+<div class="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_15px_rgba(0,242,254,0.6)]">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xxs">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-widest">Sistemas &amp; IA // Streaming</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary-container transition-colors">
+              PulseMetrics — Telemetría en Tiempo Real
+            </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md line-clamp-2">
+              Plataforma de monitoreo de microservicios con pipeline distribuido de streaming en Go y WebSockets con renderizado acelerado de series temporales.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container-highest/50 flex items-center justify-between">
+<div class="flex flex-wrap gap-space-xxs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">Go</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">WebSockets</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface-variant">Apache Kafka</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary-container font-label-code-sm text-label-code-sm font-semibold group-hover:translate-x-1 transition-transform">
+<span>Detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== DOCUMENTATION & DOWNLOADS SECTION ==================== -->
+<section class="relative w-full py-space-3xl scroll-mt-20" id="descargas">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="mb-space-2xl max-w-3xl">
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-primary-container uppercase tracking-widest mb-space-xs">
+<span>02 // DOCUMENTACIÓN OFICIAL</span>
+<span class="w-8 h-[1px] bg-primary-container/40"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Curriculum &amp; Cartas de Presentación</h2>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md">
+          Accede al expediente profesional completo, métricas de impacto de ingeniería y referencias en formatos auditados y listos para procesos de contratación.
+        </p>
+</div>
+<!-- Dual Download Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<!-- CARD A: CV Completo -->
+<div class="rounded-2xl bg-surface-container/70 backdrop-blur-xl p-space-xl relative overflow-hidden shadow-xl flex flex-col justify-between">
+<div class="absolute -top-16 -right-16 w-44 h-44 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[28px]">badge</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-primary-fixed-dim uppercase tracking-wider">
+                Actualizado 2025 • ATS Ready
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Curriculum Vitae</h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md leading-relaxed">
+              Resumen ejecutivo exhaustivo: historial de liderazgo técnico, diseño de arquitecturas cloud distribuidas, stacks tecnológicos dominados y logros cuantificables en startups y scaleups.
+            </p>
+<!-- File Details Strip -->
+<div class="mt-space-md flex items-center gap-space-lg text-outline font-label-code-sm text-label-code-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span> PDF Vectorial</span>
+<span>180 KB</span>
+<span>Español &amp; Inglés</span>
+</div>
+</div>
+<div class="mt-space-xl pt-space-md border-t border-surface-container-highest/50 flex flex-wrap items-center gap-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-semibold shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:bg-primary transition-all" download="CV_Hugo_Martinez_2025.pdf" href="placeholder">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar PDF</span>
+</a>
+<button class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-full bg-surface-container-highest text-on-surface hover:text-primary transition-colors font-body-md text-body-md font-medium" onclick="openCvPreviewModal('cv')">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Previsualizar</span>
+</button>
+</div>
+</div>
+<!-- CARD B: Cover Letter -->
+<div class="rounded-2xl bg-surface-container/70 backdrop-blur-xl p-space-xl relative overflow-hidden shadow-xl flex flex-col justify-between">
+<div class="absolute -top-16 -right-16 w-44 h-44 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">mark_email_read</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary uppercase tracking-wider">
+                Filosofía de Ingeniería
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Carta de Presentación</h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md leading-relaxed">
+              Exposición de visión técnica, metodologías ágiles de entrega continua, resolución de problemas bajo restricciones severas y cómo aporto valor tangible a equipos multidisciplinares.
+            </p>
+<!-- File Details Strip -->
+<div class="mt-space-md flex items-center gap-space-lg text-outline font-label-code-sm text-label-code-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span> Documento PDF</span>
+<span>120 KB</span>
+<span>Texto Completo</span>
+</div>
+</div>
+<div class="mt-space-xl pt-space-md border-t border-surface-container-highest/50 flex flex-wrap items-center gap-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-full bg-secondary text-on-secondary font-headline-sm text-headline-sm font-semibold shadow-[0_0_20px_rgba(222,183,255,0.3)] hover:opacity-90 transition-all" download="Cover_Letter_Hugo_Martinez.pdf" href="placeholder">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar Carta</span>
+</a>
+<button class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-full bg-surface-container-highest text-on-surface hover:text-secondary transition-colors font-body-md text-body-md font-medium" onclick="openCvPreviewModal('letter')">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Leer Online</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== TECH STACK & CAPABILITIES ==================== -->
+<section class="relative w-full py-space-3xl scroll-mt-20" id="stack">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="mb-space-2xl max-w-2xl">
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-primary-container uppercase tracking-widest mb-space-xs">
+<span>03 // DOMINIO TÉCNICO</span>
+<span class="w-8 h-[1px] bg-primary-container/40"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Stack de Tecnologías &amp; Capacidades</h2>
+</div>
+<!-- Bento Grid of Capabilities -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Block 1: Frontend -->
+<div class="rounded-2xl bg-surface-container/50 backdrop-blur-lg p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container/70 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">laptop_chromebook</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-primary-container">98% Confiabilidad</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Frontend &amp; UI Reactiva</h4>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Arquitecturas SPA/SSR de alta tasa de refresco y consistencia de estado.</p>
+</div>
+<div class="mt-space-lg flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">React 18</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Next.js 14</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">TypeScript</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Tailwind</span>
+</div>
+</div>
+<!-- Block 2: Backend -->
+<div class="rounded-2xl bg-surface-container/50 backdrop-blur-lg p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container/70 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed-dim/10 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[22px]">database</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim">95% Confiabilidad</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Backend &amp; Datos</h4>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Pipelines distribuidos, endpoints idempotentes y cache de ultra-baja latencia.</p>
+</div>
+<div class="mt-space-lg flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Go (Golang)</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Node.js</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">PostgreSQL</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Redis</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">GraphQL</span>
+</div>
+</div>
+<!-- Block 3: Creative 3D -->
+<div class="rounded-2xl bg-surface-container/50 backdrop-blur-lg p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container/70 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">view_in_ar</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-secondary">92% Confiabilidad</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Creative Code &amp; 3D</h4>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Experiencias sensoriales tridimensionales renderizadas en GPU mediante shaders.</p>
+</div>
+<div class="mt-space-lg flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Three.js</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">WebGL</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">GLSL</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">WebGPU</span>
+</div>
+</div>
+<!-- Block 4: Cloud & DevOps -->
+<div class="rounded-2xl bg-surface-container/50 backdrop-blur-lg p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container/70 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed-dim/10 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[22px]">cloud_sync</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-tertiary-fixed-dim">94% Confiabilidad</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cloud &amp; DevOps</h4>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Contenerización, automatización de pruebas CI/CD e infraestructura serverless.</p>
+</div>
+<div class="mt-space-lg flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Docker</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">AWS</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">GitHub Actions</span>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest font-label-code-sm text-label-code-sm text-on-surface">Vercel</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CONTACT / CTA SECTION ==================== -->
+<section class="relative w-full py-space-3xl scroll-mt-20" id="contacto">
+<div class="max-w-5xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="relative rounded-3xl bg-surface-container/80 backdrop-blur-2xl p-space-xl lg:p-space-3xl shadow-2xl overflow-hidden text-center">
+<!-- Ambient Radial Glows -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 right-10 w-80 h-80 bg-secondary-container/25 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="font-label-code-sm text-label-code-sm text-primary-container uppercase tracking-widest mb-space-sm">
+            ¿LISTO PARA INICIAR?
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold max-w-2xl">
+            ¿Tienes un proyecto en mente o buscas incorporar talento técnico?
+          </h2>
+<p class="mt-space-md text-on-surface-variant font-body-lg text-body-lg max-w-xl">
+            Respondo habitualmente en menos de 24 horas para discutir viabilidad técnica, arquitectura de software o contrataciones senior full-time.
+          </p>
+<div class="mt-space-2xl flex flex-col sm:flex-row items-center gap-space-md">
+<!-- Mailto Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-3.5 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-semibold shadow-[0_0_25px_rgba(0,242,254,0.4)] hover:bg-primary transition-all" href="mailto:hmartinez@soltecno.cl">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Iniciar Conversación</span>
+</a>
+<!-- Copy Email Pill Button -->
+<button class="w-full sm:w-auto group inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-full bg-surface-container-highest text-on-surface hover:text-primary-container transition-all" id="copy-email-btn" onclick="copyEmailToClipboard()">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span class="font-label-code-sm text-label-code-sm" id="email-text">hmartinez@soltecno.cl</span>
+</button>
+</div>
+<!-- Toast Confirmation -->
+<div class="opacity-0 transition-opacity duration-300 mt-space-sm inline-flex items-center gap-1 text-primary font-label-code-sm text-label-code-sm" id="copy-toast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>¡Email copiado al portapapeles!</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CINEMATIC INTERACTIVE MODAL ==================== -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-300" id="media-modal" role="dialog">
+<div class="relative w-full max-w-4xl max-h-[921px] overflow-y-auto rounded-2xl bg-surface-container-high/90 backdrop-blur-3xl shadow-2xl p-space-lg lg:p-space-xl transform scale-95 transition-transform duration-300" id="modal-card">
+<!-- Close Button -->
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-container-highest text-on-surface hover:text-primary-container hover:bg-surface-bright flex items-center justify-center transition-colors z-20" onclick="closeModal()">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<!-- Modal Content Slot -->
+<div class="flex flex-col gap-space-lg" id="modal-content">
+<!-- Injected via JavaScript based on current selection -->
+</div>
+</div>
+</div>
+<!-- Inline Micro-Interactions JavaScript -->
+<script>
+    // Project Data for Modal Showcase
+    const projectsData = {
+      neuroflow: {
+        title: "NeuroFlow — Asistente Cognitivo IA",
+        category: "Sistemas & IA // Workflow Automation",
+        description: "Plataforma de orquestación agéntica basada en grafos acíclicos dirigidos (DAGs) para conectar modelos LLM con bases de datos vectoriales. Integra trazabilidad de latencias en cada nodo con WebSockets en streaming.",
+        status: "Producción • v2.4 Activo",
+        metrics: "99.98% Precisión en DAGs | <120ms Latencia de Inferencia",
+        imageAlt: "Futuristic artificial intelligence workspace dashboard with cyan node connections and telemetry stream",
+        tags: ["Next.js 14", "TypeScript", "OpenAI API", "Tailwind CSS", "Prisma", "PostgreSQL"],
+        github: "https://github.com",
+        demo: "https://example.com"
+      },
+      aetheria: {
+        title: "Aetheria — Motor WebGL 3D",
+        category: "WebGL & Gráficos // Simulación Física",
+        description: "Motor gráfico de física de partículas y simulación de fluidos en tiempo real sobre el navegador. Utiliza shaders GLSL de dispersión de luz subsuperficial y pipeline experimental WebGPU para cálculo paralelo masivo.",
+        status: "Demostración Interactiva • 60 FPS Constantes",
+        metrics: "150k Partículas Simultáneas | 60 FPS Estable",
+        imageAlt: "3D iridescent fluid simulation and particle field glowing in deep cyan and purple lights",
+        tags: ["Three.js", "WebGL 2.0", "GLSL Custom Shaders", "WebGPU", "Vite"],
+        github: "https://github.com",
+        demo: "https://example.com"
+      },
+      chronos: {
+        title: "Chronos — Web OS Modular",
+        category: "Web & Apps // Desktop Environment",
+        description: "Entorno de escritorio virtual completo alojado en web. Implementa un sistema de archivos virtual encriptado con AES-256 en IndexedDB y módulos compilados en Rust WASM para compresión de archivos sin bloqueo del hilo principal.",
+        status: "Open Source • Beta 1.0",
+        metrics: "0ms UI Block | Cifrado Local AES-256",
+        imageAlt: "Futuristic cyber minimalist desktop user interface with translucent dark glass cards",
+        tags: ["React 18", "Rust WASM", "Tailwind CSS", "IndexedDB", "Zustand"],
+        github: "https://github.com",
+        demo: "https://example.com"
+      },
+      pulse: {
+        title: "PulseMetrics — Telemetría en Tiempo Real",
+        category: "Sistemas & Streaming // Baja Latencia",
+        description: "Dashboard de observabilidad empresarial para arquitecturas basadas en microservicios. Procesa flujos de eventos a través de Apache Kafka y visualiza series temporales mediante renderizado Canvas y WebGL acelerado.",
+        status: "Empresarial • En Despliegue",
+        metrics: "1.2M Eventos por Segundo | Consumo < 50MB RAM",
+        imageAlt: "High-density network telemetry operations center dashboard with high speed streaming line charts",
+        tags: ["Go (Golang)", "WebSockets", "Apache Kafka", "Redis", "ECharts"],
+        github: "https://github.com",
+        demo: "https://example.com"
+      }
+    };
+
+    // Open Project Modal
+    function openProjectModal(key) {
+      const data = projectsData[key];
+      if (!data) return;
+
+      const content = document.getElementById('modal-content');
+      content.innerHTML = `
+        <div>
+          <span class="font-label-code-sm text-label-code-sm text-primary-container uppercase tracking-widest">${data.category}</span>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">${data.title}</h2>
+        </div>
+
+        <!-- Simulated Interactive Viewport with HUD -->
+        <div class="relative w-full h-80 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center group">
+          <div style="background-image: url('placeholder')" data-alt="${data.imageAlt}" class="w-full h-full bg-cover bg-center"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-surface-container-lowest/40"></div>
+          
+          <!-- Interactive HUD Scrim -->
+          <div class="absolute top-4 left-4 flex items-center gap-2 bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            <span class="font-label-code-sm text-label-code-sm text-on-surface">${data.status}</span>
+          </div>
+
+          <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between bg-surface-container-lowest/85 backdrop-blur-md p-3 rounded-xl">
+            <div class="font-label-code-sm text-label-code-sm text-primary-fixed-dim">
+              ${data.metrics}
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-label-code-sm text-label-code-sm text-on-surface-variant">60 FPS</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+          ${data.description}
+        </p>
+
+        <div>
+          <h4 class="font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider mb-2">Stack Tecnológico</h4>
+          <div class="flex flex-wrap gap-2">
+            ${data.tags.map(t => `<span class="px-3 py-1 rounded-full bg-surface-container-highest font-label-code-sm text-label-code-sm text-primary">${t}</span>`).join('')}
+          </div>
+        </div>
+
+        <div class="pt-space-md border-t border-surface-container-highest/60 flex flex-wrap items-center gap-space-md">
+          <a href="${data.demo}" target="_blank" class="inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-semibold hover:bg-primary transition-all shadow-[0_0_20px_rgba(0,242,254,0.3)]">
+            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            <span>Lanzar Demo en Vivo</span>
+          </a>
+          <a href="${data.github}" target="_blank" class="inline-flex items-center gap-2 px-space-md py-3 rounded-full bg-surface-container-highest text-on-surface hover:text-primary-container transition-colors font-body-md text-body-md">
+            <span class="material-symbols-outlined text-[18px]">code</span>
+            <span>Código Fuente</span>
+          </a>
+        </div>
+      `;
+
+      showModal();
+    }
+
+    // Open CV / Cover Letter Preview Modal
+    function openCvPreviewModal(type) {
+      const content = document.getElementById('modal-content');
+      const isCv = type === 'cv';
+
+      content.innerHTML = `
+        <div>
+          <span class="font-label-code-sm text-label-code-sm text-primary-container uppercase tracking-widest">
+            ${isCv ? 'CURRICULUM VITAE OFICIAL' : 'CARTA DE PRESENTACIÓN'}
+          </span>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">
+            ${isCv ? 'Hugo Martínez — Lead & Creative Engineer' : 'Carta de Presentación & Metodología'}
+          </h2>
+        </div>
+
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest/80 text-on-surface-variant font-body-md text-body-md space-y-4 max-h-96 overflow-y-auto leading-relaxed">
+          ${isCv ? `
+            <div class="border-b border-surface-container-highest pb-3">
+              <h4 class="text-on-surface font-headline-sm text-headline-sm font-semibold">Resumen Profesional</h4>
+              <p class="mt-1">Ingeniero de Software con más de 5 años construyendo productos de alta escala y rendimiento gráfico interactivo. Especializado en Next.js, WebGL, arquitecturas distribuidas en Go y optimización de render en clientes de baja capacidad.</p>
+            </div>
+            <div class="border-b border-surface-container-highest pb-3">
+              <h4 class="text-on-surface font-headline-sm text-headline-sm font-semibold">Experiencia Laboral Reciente</h4>
+              <p class="mt-1 text-primary-container font-label-code-sm text-label-code-sm">Senior Frontend Architect • Nexus Labs (2022 - Actualidad)</p>
+              <p class="mt-1">Reducción del 45% en First Contentful Paint y creación del sistema de diseño modular basado en tokens CSS adoptado por 14 micro-frontends.</p>
+            </div>
+            <div>
+              <h4 class="text-on-surface font-headline-sm text-headline-sm font-semibold">Educación</h4>
+              <p class="mt-1">Grado en Ingeniería Informática de Software • Mención en Gráficos por Computador e IA.</p>
+            </div>
+          ` : `
+            <p>Estimado equipo de selección y líderes técnicos,</p>
+            <p>Me dirijo a ustedes para expresar mi entusiasmo en colaborar en proyectos ambiciosos que requieran una intersección única entre robustez arquitectónica y refinamiento estético de vanguardia.</p>
+            <p>A lo largo de mi trayectoria he comprobado que el software de alto rendimiento no es un accidente, sino el resultado de iteración sistemática, medición de telemetría y empatía por el usuario final.</p>
+            <p>Quedo a su disposición para coordinar una reunión técnica donde profundizar sobre mis aportes pasados y cómo puedo acelerar sus objetivos de ingeniería.</p>
+            <p class="font-semibold text-on-surface mt-4">— Hugo Martínez</p>
+          `}
+        </div>
+
+        <div class="pt-space-md border-t border-surface-container-highest/60 flex items-center justify-between">
+          <span class="font-label-code-sm text-label-code-sm text-outline">Documento verificado criptográficamente</span>
+          <a href="placeholder" download="${isCv ? 'CV_Hugo_Martinez.pdf' : 'Cover_Letter_Hugo_Martinez.pdf'}" class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-semibold hover:bg-primary transition-all">
+            <span class="material-symbols-outlined text-[18px]">download</span>
+            <span>Descargar Archivo</span>
+          </a>
+        </div>
+      `;
+
+      showModal();
+    }
+
+    function showModal() {
+      const modal = document.getElementById('media-modal');
+      const card = document.getElementById('modal-card');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100', 'pointer-events-auto');
+      card.classList.remove('scale-95');
+      card.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('media-modal');
+      const card = document.getElementById('modal-card');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      card.classList.add('scale-95');
+      card.classList.remove('scale-100');
+      document.body.style.overflow = '';
+    }
+
+    // Modal close on backdrop click & ESC key
+    document.getElementById('media-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Interactive Category Filter Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_12px_rgba(0,242,254,0.3)]');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_12px_rgba(0,242,254,0.3)]');
+        btn.classList.remove('text-on-surface-variant');
+
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Copy to clipboard with toast notification
+    function copyEmailToClipboard() {
+      const email = "hmartinez@soltecno.cl";
+      navigator.clipboard.writeText(email).then(() => {
+        const toast = document.getElementById('copy-toast');
+        toast.classList.remove('opacity-0');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0');
+        }, 3000);
+      });
+    }
+
+    // Interactive 3D Perspective Card Tilt
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -4;
+        const rotateY = ((x - centerX) / centerX) * 4;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+      });
+    });
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface-container-low/90 backdrop-blur-xl mt-space-3xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-2xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex items-center gap-space-sm"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container shadow-[0_0_8px_#00f2fe]"></span></span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-wider">Disponible para proyectos Q2/Q3</span></div><div class="flex items-center gap-space-lg"><a class="font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">GitHub</a><a class="font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">LinkedIn</a><a class="font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">X / Twitter</a><a class="font-label-code-sm text-label-code-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">Email</a></div><div class="font-label-code-sm text-label-code-sm text-outline">© 2024 Hugo Martínez. Todos los derechos reservados.</div></div></footer></body></html>

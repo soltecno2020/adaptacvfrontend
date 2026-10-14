@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Professional caregiver avatar</title>
+  <desc id="desc">A calm illustrated avatar for a babysitter and housekeeping portfolio.</desc>
+  <rect width="640" height="640" fill="#e8e1dc"/>
+  <circle cx="512" cy="124" r="150" fill="#dae6d2"/>
+  <path d="M0 548C112 466 204 440 320 440s208 26 320 108v92H0Z" fill="#566252"/>
+  <path d="M175 640c16-114 63-181 145-181s129 67 145 181Z" fill="#fcf9f3"/>
+  <path d="M230 470c22 28 52 42 90 42s68-14 90-42l42 170H188Z" fill="#3d1606" opacity=".92"/>
+  <ellipse cx="320" cy="280" rx="112" ry="136" fill="#d89d7e"/>
+  <path d="M208 284c-7-120 54-188 142-188 79 0 125 61 112 167-37-30-76-44-117-44-50 0-92 21-137 65Z" fill="#33231e"/>
+  <path d="M218 313c-17-66 1-135 46-170 30 55 92 72 173 49 20 35 25 82 12 127-27-34-67-52-116-52-48 0-87 17-115 46Z" fill="#3f2d26"/>
+  <circle cx="280" cy="286" r="8" fill="#2c211e"/>
+  <circle cx="366" cy="286" r="8" fill="#2c211e"/>
+  <path d="M291 348c19 15 39 15 58 0" fill="none" stroke="#9b4d4a" stroke-linecap="round" stroke-width="8"/>
+  <path d="M202 630c23-91 63-137 118-137s95 46 118 137" fill="#f3f0ea"/>
+  <path d="M264 494l56 61 56-61" fill="#dae6d2"/>
+  <circle cx="320" cy="555" r="9" fill="#566252"/>
+  <circle cx="320" cy="591" r="9" fill="#566252"/>
+  <path d="M86 144h122v94H86z" fill="#ffdbcf" opacity=".75"/>
+  <path d="m116 198 28-30 28 30" fill="none" stroke="#6b3a27" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 640" role="img" aria-labelledby="title description">
+  <title id="title">Avatar futurista de Hugo Martínez</title>
+  <desc id="description">Retrato ilustrado con luces cian y violetas sobre fondo tecnológico.</desc>
+  <rect width="560" height="640" fill="#0b0d1b"/>
+  <path d="M0 520 121 390l88 70 115-151L560 503v137H0Z" fill="#1c1f2d"/>
+  <g fill="none" opacity=".7" stroke="#00f2fe" stroke-width="2"><path d="M25 76h92M25 76v92M443 76h92M535 76v92M25 472v92h92M443 564h92v-92"/><circle cx="280" cy="275" r="218"/><circle cx="280" cy="275" r="194" stroke="#deb7ff" opacity=".55"/></g>
+  <ellipse cx="280" cy="275" rx="114" ry="131" fill="#bc7f61"/>
+  <path d="M168 265c4-104 59-157 114-157 71 0 112 61 110 159-38-31-78-54-118-67-24 33-61 56-106 65Z" fill="#181b29"/>
+  <path d="M188 313h48m88 0h48" stroke="#101320" stroke-linecap="round" stroke-width="12"/>
+  <path d="M243 369c23 17 51 17 74 0" fill="none" stroke="#7d3f4b" stroke-linecap="round" stroke-width="10"/>
+  <path d="M132 640v-88c0-79 66-132 148-132s148 53 148 132v88Z" fill="#272938"/>
+  <path d="m217 430 63 69 63-69 37 210H180Z" fill="#00aeb8"/>
+  <path d="m280 499 14 38-14 49-14-49Z" fill="#deb7ff"/>
+  <g fill="#00f2fe"><circle cx="88" cy="230" r="6"/><circle cx="467" cy="358" r="6"/><circle cx="112" cy="429" r="4"/></g>
+</svg>
